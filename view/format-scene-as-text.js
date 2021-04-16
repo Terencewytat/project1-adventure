@@ -1,6 +1,6 @@
 function lineWrap(text, width) {
     let wrappedText = ""
-    let paragraphs = text.split('\n')
+    let paragraphs = text.split("\n")
     paragraphs.forEach((paragraphText) => {
         wrappedText += "  "
         columnCount = 2 
@@ -20,7 +20,7 @@ function lineWrap(text, width) {
 }
 function formatSceneAsText(scene, width, baseUrl) {
     let body = lineWrap(scene.description, width)+"\n"
-    if (scene.options.legnth > 0) {
+    if (scene.options.length > 0) {
         body += "What do you do?\n"
         scene.options.forEach((option) => {
             body += option.description + "\n"

@@ -2,11 +2,10 @@ const scenes = require('./scenes')
 
 scenes.createScene("Intro","Body of Text in the scenario",
 [ 
-    { description: "Choice option one", scene: "Scene_name" },
-    { description: "Choice option two", scene: "Scene_name" }
+    { description: "Choice option one", scene: "Act_1_The_Beginning" }
 ])
 
-scenes.createScene("Act 1: The Beginning","Body of Text in the scenario",
+scenes.createScene("Act_1_The_Beginning","Body of Text in the scenario for Act 1",
 [ 
     { description: "Choice option one", scene: "Scene_name" },
     { description: "Choice option two", scene: "Scene_name" }
