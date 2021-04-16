@@ -1,15 +1,15 @@
 require('./model/adventure')
 
-const sceneRoutes = require('./routes/scene-route')
+const sceneRoutes = require('./routes/sceneRoute')
 
 const express = require('express')
 const app = express()
 const port = process.env.port || 3000
 
-app.use('/scene-route', sceneRoutes)
+app.use('/sceneRoute', sceneRoutes)
 
 app.get('/', (req, res) => {
-    res.redirect('/scene-route/intro')
+    res.redirect('/sceneRoute/intro')
 })
 
 app.listen(port, () => {
