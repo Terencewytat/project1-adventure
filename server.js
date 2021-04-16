@@ -9,7 +9,7 @@ const port = process.env.port || 3000
 app.use('/sceneRoute', sceneRoutes)
 
 app.get('/', (req, res) => {
-    res.redirect('/sceneRoute/intro')
+    res.redirect('/sceneRoute/Intro')
 })
 
 app.listen(port, () => {

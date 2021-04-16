@@ -1,6 +1,6 @@
 const scenes = require('./scenes')
 
-scenes.createScene("intro","Body of Text in the scenario",
+scenes.createScene("Intro","Body of Text in the scenario",
 [ 
     { description: "Choice option one", scene: "Scene_name" },
     { description: "Choice option two", scene: "Scene_name" }
