@@ -1,0 +1,7 @@
+// let effectiveVigor = (
+//
+// )
+
+function calcEffectiveStats() {
+
+}
