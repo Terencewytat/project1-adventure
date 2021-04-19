@@ -1,6 +1,6 @@
 const scenes = require('./scenes')
 
-scenes.createScene("Intro","Body of Text in the scenario",
+scenes.createScene("Intro","Yes indeed. It is called Lothric. Where the transitory lands of the Lords of Cinder converge. In venturing north, the pilgrims discover the truth of the old words. The fire fades. And the lords go without thrones. When the link of fire is threatened, the bell tolls; Unearthing the old lords of cinder from their graves. Aldrich Saint of the Deep; Farron’s Undead Legion the Abyss Watchers; and their reclusive lord of the profaned capitol Yhorm the Giant. Only in truth, the lords will abandon their thrones. And the unkindled will rise. Nameless accursed undead, unfit even to be cinder. And so it is, that ash seeketh embers.",
 [ 
     { description: "Choice option one", scene: "Act_1_The_Beginning" }
 ])
