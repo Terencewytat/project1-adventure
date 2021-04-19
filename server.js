@@ -1,4 +1,4 @@
-require('./model/adventure')
+require('./model/darksouls3')
 
 const sceneRoutes = require('./routes/sceneRoute')
 
