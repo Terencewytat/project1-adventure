@@ -1,12 +1,13 @@
 let scenes = {}
 
-async function createScene(id, description, options) {
+async function createScene(id, description, combat, options) {
     if (!options) {
       options = []  
     }
     scenes[id] = {
         id,
         description,
+        combat,
         options
     }
 }

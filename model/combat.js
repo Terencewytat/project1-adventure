@@ -9,6 +9,8 @@ function diceRolls(min, max){
     console.log(result)
 }
 
+
+
 function calcEffectiveStats() {
 
 }const longSword = {
