@@ -21,7 +21,7 @@ function lineWrap(text, width) {
 function formatSceneAsText(scene, width, baseUrl) {
     let body = lineWrap(scene.description, width)+"\n"
     if (scene.options.length > 0) {
-        body += "What have you?\n\n"
+        body += "What do you choose?\n\n"
         scene.options.forEach((option) => {
             body += option.description + "\n"
             body += "--> Go to: "+baseUrl+"/sceneRoute/"+option.scene+"\n\n"
