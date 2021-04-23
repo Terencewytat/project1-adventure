@@ -1,5 +1,7 @@
-function Character(charaClass, vigor, strength, vitality, endurance, speed) {
-    this.charaClass = charaClass;
+const enemy = require("./enemy");
+
+function Player(classType, vigor, strength, vitality, endurance, speed) {
+    this.classType = classType;
     this.vigor = vigor;
     this.strength = strength;
     this.vitality = vitality;
@@ -7,10 +9,25 @@ function Character(charaClass, vigor, strength, vitality, endurance, speed) {
     this.speed = speed;
 }
 
-let knight = new Character('Knight',12,13,15,14,11)
-let warrior = new Character('Warrior',14,16,11,11,13)
+let player = new Player('Knight',12,13,15,14,11)
 
-console.log(knight.vigor)
+let PlayerMoves = {
+    calcAttack: function() {
+        let getPlayerSpeed = player.speed;
+        let getEnemySpeed = enemy.speed;
+    }
+}
+
+let playerAttack = function() {
+    let calcBaseDamage
+}
+
+
+module.exports = player
+
+
+
+
 
 // const character = [
 //     { 
