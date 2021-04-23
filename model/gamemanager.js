@@ -1,4 +1,8 @@
-var GameManager = {
+const player = require('./player')
+const enemy = require('./enemy')
+
+
+let GameManager = {
     setGameStart: function() {
         this.resetPlayer();
         this.setPreFight();
@@ -11,6 +15,22 @@ var GameManager = {
     }
 }
 
+let playerMoves = {
+    calcAttack: function() {
+        let getPlayerSpeed = player.speed
+        let getEnemySpeed = enemy.speed
+    }
+}
+
+let playerAttack = function() {
+    let calcBaseDamage;
+    if (player.endurance > 0) {
+        calcBaseDamage = player.strength * player.endurance / 100;
+    } else {
+        calcBaseDamage = player.strength
+    }
+    
+}
 
 
 

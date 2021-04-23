@@ -1,5 +1,3 @@
-const enemy = require("./enemy");
-
 function Player(classType, vigor, strength, vitality, endurance, speed) {
     this.classType = classType;
     this.vigor = vigor;
@@ -9,18 +7,8 @@ function Player(classType, vigor, strength, vitality, endurance, speed) {
     this.speed = speed;
 }
 
+
 let player = new Player('Knight',12,13,15,14,11)
-
-let PlayerMoves = {
-    calcAttack: function() {
-        let getPlayerSpeed = player.speed;
-        let getEnemySpeed = enemy.speed;
-    }
-}
-
-let playerAttack = function() {
-    let calcBaseDamage
-}
 
 
 module.exports = player
