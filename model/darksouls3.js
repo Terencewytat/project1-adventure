@@ -11,7 +11,7 @@ scenes.createScene("Cemetary_of_Ash","\n On the side of a hill... Towards the co
     { description: "Proceed to fight!", scene: "First_Encounter" },
 ])
 
-scenes.createScene("First_Encounter","\n You defeat the hooded man! His body lay stiff in the mud. You take a part of his soul as he slowly disintigrates into nothing. You are now in the middle of the crossroad. You look left and see what looks like a stone path towards the exit of cemetary. You look right and see a narrow pathway submerged in shallow water leading towards a cavern.","",
+scenes.createScene("First_Encounter","\n You defeat the hooded man! His body lay stiff in the mud. You take a closer look and notice that he is undead. Before you leave, you take a part of his soul as he slowly disintigrates into nothing. You now reach the middle of the crossroad. You look left and see what looks like a stone path towards the exit of cemetary. You look right and see a narrow pathway submerged in shallow water leading towards a cavern.","",
 [ 
     { description: "Go left.", scene: "Stone_Pathway" },
     { description: "Go Right.", scene: "Submerged_Pathway" }
@@ -36,7 +36,12 @@ scenes.createScene("COA_Crossroads","\n You are now in the middle of the crossro
 scenes.createScene("Stone_Pathway","\n You make your way on to the stone path. The stone tiles look worn and aged. The weather really has done a number on this place. Tiles are upheaved and tree roots have pushed the slabs of stone around. The path is hard to walk on, but you can see that it leads towards the middle of the cemetary. There in the middle, you see what looks like a broken stone fountain with a couple deceased corpses laying about. One corpose on the ground covered in a black cloak. One corpose propped up against the broken fountain with an item clasped in its hand. As you make your way towards the fountain, the corpse cloaked in black suddenly springs up and charges at you with a a dagger!","",
 [ 
     { description: "Proceed to fight!", scene: "Second_Encounter" },
-    { description: "Run!", scene: "Escape_Second_Encounter" }
+    { description: "Run!", scene: "Escape" }
+])
+
+scenes.createScene("Escape","\n You attempt to run! However, the cloaked undead cuts you off. You have no choice here. You need to fight!","",
+[ 
+    { description: "Proceed to fight!", scene: "Second_Encounter" },
 ])
 
 scenes.createScene("Second_Encounter","\n You defeat the cloaked man! That was quite the shock. But nonetheless, you carry on forward. Making your way to the fountain you see an item clenched in the fist of the corpse. It looks like a bottle.","",
@@ -100,6 +105,21 @@ scenes.createScene("COA_Entrance","\n There you finally arrive just before the e
     { description: "Go right.", scene: "COA_Cavern" },
 ])
 
+scenes.createScene("COA_Cavern","\n You follow a winding path into the cavern. A portion of the path is submerged in water. You proceed to walk through the water. Your movement slows down. You make your way further inside and see the cavern begin to widen. This room is large and spacious. On one corner of the room you see an item. The other corner of the room is covered in crystal. ","",
+[ 
+    { description: "Go pick up the item.", scene: "Unknown_soul" },
+])
+
+scenes.createScene("Unknown_soul","\n You pick up the soul of an unknown traveler. As you begin to make your way out, you notice the crystals that were on the opposite side of the room begin to move. This was no ordinary rock formation. It was actually a crystal lizard. Its body covered in crystals and nearly three times as tall as a full grown man while standing. It seems as though you've just walked into its lair. You begin to back up slowly, but the entrance to the cavern is on the opposite side of where you are. The crystal lizard cuts off your means of escape. You have no choice now. You must fight!","",
+[ 
+    { description: "Proceed to fight!", scene: "Crystal_lizard" },
+])
+
+scenes.createScene("Crystal_lizard","\n You vanquish that crystal lizard. It's body collapsed on its side as the crystals on its back come hurling to the ground. You grab a titanite slab off of its body. This item may come in handy when upgrading equipment in the future. Slowly, you make your way back towards cemetary. As you backtrack, you see rays of light pierce that darkness of of the entrance. ","",
+[ 
+    { description: "Go towards the light.", scene: "Outside_Cemetary" },
+])
+
 scenes.createScene("Outside_Cemetary","\n You run towards the entrance of the cemetary. This is your ticket out of this place. As you approach the entrance, the path begins to open and the sunlight starts to break through the darkness of the cemetary. The path slowly curves left and slopes upwards following the cliff face. Off in the distance you see a mountain range that spans your vision and several clouds overhead. It is good to be outside. You can hear the wind howling as it passes through the mountain range. As you make your way towards the first bonfire. The bonfire is positioned near the outskirts of the firelink shrine.","",
 [ 
     { description: "Rest Up.", scene: "Bonfire" },
@@ -116,7 +136,7 @@ scenes.createScene("Shrine_Outskirt","\n You make your way down a path from the 
     { description: "Proceed to fight!", scene: "Iudex_Gundyr" },
 ])
 
-scenes.createScene("Iudux_Gundyr","\n You defeat Iudex Gundyr! His body drops to the ground and makes a heavy thud. Inside his body is a coiled sowrd. You retrieve the sword from his body and place it in your bag. You make your way towards the second gate. With your strength you push open the doors and notice that you are at the foot of the firelink shrine.","",
+scenes.createScene("Iudex_Gundyr","\n You defeat Iudex Gundyr! His body drops to the ground and makes a heavy thud. Inside his body is a coiled sowrd. You retrieve the sword from his body and place it in your bag. You make your way towards the second gate. With your strength you push open the doors and notice that you are at the foot of the firelink shrine.","",
 [ 
     { description: "Go into Firelink Shrine", scene: "Firelink_Shrine" },
 ])
