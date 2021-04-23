@@ -49,10 +49,11 @@ scenes.createScene("Ashen_Estus_Flask","You bend down to the corpse and notice t
     { description: "Keep on walking down the stone path.", scene: "Middle_of_the_Cemetary" }
 ])
 
-scenes.createScene("Epilogue","Body of Text in the scenario",
+scenes.createScene("Middle_of_the_Cemetary","Here you find yourself in the middle of the cemetary. Before are three path ways. One leads right up a small set of steps. The second leads straihgt through a dilapidated stone arch. The third leads left towards a cliff face further into the cemetary.",
 [ 
-    { description: "Choice option one", scene: "Scene_name" },
-    { description: "Choice option two", scene: "Scene_name" }
+    { description: "Go right and up the steps.", scene: "COA_Steps" },
+    { description: "Go straigh through the stone arch.", scene: "COA_Arch" },
+    { description: "Go left further into the cemetary.", scene: "COA_Cliff" }
 ])
 
 scenes.createScene("Epilogue","Body of Text in the scenario",
